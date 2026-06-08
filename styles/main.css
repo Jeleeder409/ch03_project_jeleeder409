@@ -1,0 +1,33 @@
+nav{
+    background-color: rgb(132, 0, 255);
+    padding: 10px 15px
+}
+
+ul li a {
+    color: chartreuse;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li:hover {
+    background-color:black;
+    color:chartreuse;
+    cursor: pointer;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color:chartreuse
+}
+
+.bordered-image {
+    border: 3px solid rgb(21, 255, 0);
+    border-radius: 4px;
+    display: block;
+    max-width: 100%
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhancing My Web Page</title>
+    <link rel="stylesheet" href="styles/main.css">
+     <style>
+        body {
+            background-color: black;
+            color:blueviolet
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contact">
+            <h2>Contact information</h2>
+
+            <form id="contactForm" action="#" method="POST">
+
+                <div>
+                    <lable for="userName">Name:</lable>
+                    <input type="text" id="userName" name="userName" placeholder=""Your Name" required>
+                </div>
+                <br>
+                <div>
+                    <label for="userEmail">Email</label>
+                    <input type="email" id="userEmail" name="userEmail" placeholder="Your Email" required>
+                </div>
+                <br>
+                <div>
+                    <label for="userMessage">Message</label>
+                    <input type="text" id="userMessage" name="userMessage" placeholder="Your Message" required>
+                </div>
+                <br>
+                <div>
+                    <input type="button" value="Submit From" onclick="validateAndSubmit()">
+                </div>
+            </form>
+             <script>
+        function validateAndSubmit() {
+            const form = document.getElementById('contactForm');
+            
+            if (form.checkValidity()) {
+                alert('Form submitted successfully!');
+                form.submit(); 
+            } else {
+                form.reportValidity();
+            }
+        }
+    </script>
+
+        </section>
+    </main>
+    <footer>
+        <p></p>
+    </footer>
+</body>
+</html>

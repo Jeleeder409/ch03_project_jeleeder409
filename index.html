@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhancing My Web Page</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        body {
+            background-color: black;
+            color:blueviolet
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+            margin-top: 20px
+        }
+        th, td {
+            border: 1px solid #02ff0f;
+            padding: 12px;
+            text-align:"left";
+        }
+        th {
+            background-color: black;
+            color:blueviolet
+        }
+        tbody tr:nth-child(even) {
+            background-color: rgb(130, 0, 252);
+            color:chartreuse
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Enhancing My Web Page</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    <table>
+  <thead>
+    <tr>
+      <th>Term</th>
+      <th>Definition</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr>
+      <td>Deprecated</td>
+      <td>Refers to a feature, function, or code that is still operational but is no longer recommended for use and may be removed in the future.</td>
+    </tr>
+    
+    <tr>
+      <td>Responsive Design</td>
+      <td>An approach to web development where the layout automatically adjusts its size and appearance to look and work well across all devices.</td>
+    </tr>
+    
+    <tr>
+      <td>User Experience</td>
+      <td>Commonly known as UX, it encompasses all aspects of a person's emotions, attitudes, and overall satisfaction when interacting with a system, product, or service.</td>
+    </tr>
+  
+</tbody>
+</table>
+    </header>
+    <main>
+        <section id="Home">
+            <h2>Working With Images</h2>
+        </section>
+    <style>
+        .resize-250 {
+            max-width: 250px;
+            max-height: 250px;
+            object-fit:contain;
+        }
+    </style>
+<img src="media/purple_cat.png" class="resize-250" alt="purple_cat.png">
+
+<img src="media/purple_cat_green_sunglasses.jpg" class="resize-250" alt="purple_cat_green_sunglasses.jpg">
+<p>Above are two pictures of a cool cat, the one on the left is a .png and the right is .jpg. While both to be of similar quality, the .png is much larger with 72.4kb file size, whereas the .jpg is only 8.6kb</p>
+<figure>
+    <img src="media/icon.jpg" class="bordered-image" alt="purple_and_neon_green_shapes">
+    <figcaption>A neato arrangement of shapes matching the color shceme of this project.</figcaption>
+</figure>
+    </main>    
+    <footer>
+        <p></p>
+    </footer>
+</body>
+</html>
